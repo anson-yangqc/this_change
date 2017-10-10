@@ -37,3 +37,21 @@ alert(sec.name);
  ```
 ## var _this = this
 * 保存this指针方法
+
+## $.proxy()
+```javascript
+$(document).ready(function(){
+  var objPerson = {
+    name: "John Doe",
+    age: 32,
+    test: function(){
+      $("p").after("Name: " + this.name + "<br> Age: " + this.age);
+    },
+	show:function(){
+		alert('show')
+	}
+  };
+  $("button").click($.proxy(objPerson,"test"));
+});
+</script>
+```
