@@ -26,6 +26,24 @@ function two(name){
 var sec = new two('two');
 alert(sec.name);
 ```
+
+```javascript
+function cat(){
+	this.food = "fish"
+}
+cat.prototype.say = function(){
+		console.log("I love "+this.food);
+	}
+
+var blackCat = new cat();
+blackCat.say();//I love fish
+
+function dog(){
+	this.food = '狗粮'
+}
+var whiteDog = new dog()
+blackCat.say.call(whiteDog);//I love 狗粮
+```
 ## apply
 * 跟call用法一样
 
