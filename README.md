@@ -16,6 +16,16 @@ function one(initoption){
 ```javascript
     this.showResdiv.call(this);//传入什么，this就指向什么
 ```
+```javascript
+function one(name){
+	this.name = name
+}
+function two(name){
+	one.call(this,name);
+}
+var sec = new two('two');
+alert(sec.name);
+```
 ## apply
 * 跟call用法一样
 
