@@ -15,4 +15,5 @@
 			this._resultClick && this._resultClick(result,infowindow);
     }.bind(this)); //传入什么，this就指向什么
  ```
-## 
+## var _this = this
+* 保存this指针方法
