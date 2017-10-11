@@ -73,3 +73,20 @@ $(document).ready(function(){
 });
 </script>
 ```
+
+## es6类的绑定（react常用）
+```javascript
+constructor(){
+	super()
+	//初始化state
+	this.state = {
+		comments:[
+			{id:time,name:'Tom',content:"还不错!"},
+			{id:time+1,name:'Jack',content:"很不错!"}
+		]
+	}
+	//绑定this
+	this.addComment = this.addComment.bind(this);
+	}
+```
+
