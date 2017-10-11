@@ -84,4 +84,8 @@ constructor(){
 	this.addComment = this.addComment.bind(this);
 }
 ```
-
+```javascript
+<p><button type="button" onClick={(this.add).bind(this)}>提交</button></p>
+第一个this指实例
+第二个this是说add方法里面的this用实例作this
+```
